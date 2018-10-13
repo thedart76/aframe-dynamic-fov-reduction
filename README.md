@@ -1,6 +1,6 @@
 # aframe-dynamic-fov-reduction
 
-Dynamic FOV Reduction Component For A-Frame
+Dynamic FOV Reduction Component For A-Frame.
 
 ![](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/aframe-dynamic-fov-reduction.gif)
 
