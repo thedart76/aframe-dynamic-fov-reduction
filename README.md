@@ -1,6 +1,6 @@
 # aframe-dynamic-fov-reduction
 
-Dynamic FOV Reduction Component For A-Frame.
+Dynamic FOV Reduction Component For A-Frame
 
 ![](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/aframe-dynamic-fov-reduction.gif)
 
@@ -21,10 +21,9 @@ Dynamic FOV Reduction Component For A-Frame.
 
 The **dynamic-fov-reduction** component relies on the following components, so bear in mind that their installation is required:
 - [aframe-extras / movement-controls](https://github.com/donmccurdy/aframe-extras/tree/master/src/controls "aframe-extras / movement-controls") created by Don McCurdy
-- [aframe-super-hands-component v2.1.0 / progressive-controls](https://github.com/wmurphyrd/aframe-super-hands-component/tree/v2.1.0#progressive-controls-component "aframe-super-hands-component v2.1.0 / progressive-controls") created by Will Murphy
-- [aframe-animation-component](https://github.com/ngokevin/kframe/tree/master/components/animation/ "aframe-animation-component") created by Kevin Ngo
+- [aframe-super-hands-component / progressive-controls](https://github.com/wmurphyrd/aframe-super-hands-component#news "aframe-super-hands-component / progressive-controls") created by Will Murphy
 
-🙏 Thank you for your amazing components, [Don](https://github.com/donmccurdy "Don"), [Will](https://github.com/wmurphyrd "Will"), and [Kevin](https://github.com/ngokevin "Kevin")!
+🙏 Thank you for your amazing components, [Don](https://github.com/donmccurdy "Don") and [Will](https://github.com/wmurphyrd "Will")!
 
 ------------
 
@@ -34,11 +33,11 @@ Install and use by directly including the [browser files](https://github.com/the
 
 	<head>
 		<title>Dynamic-FOV-Reduction Component</title>
-		<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-		<script src="https://rawgit.com/thedart76/aframe-dynamic-fov-reduction/master/js/aframe-dynamic-fov-reduction.min.js"></script>
-		<script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script>
-		<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
-		<script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+		<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+		<script src="https://rawcdn.githack.com/thedart76/aframe-dynamic-fov-reduction/bc4240eeb8feb777bf90e6364c73517703721471/js/aframe-dynamic-fov-reduction.min.js"></script>
+		<script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
+		<script src="js/progressive-controls.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
 	</head>
 
 ### Instructions
@@ -55,6 +54,9 @@ For example:
 	<a-entity id="cam-rig" dynamic-fov-reduction="strength: 1">
 		<a-camera></a-camera>
 	</a-entity>
+    
+**3)** Serve progressive-controls.js yourself. You can find the file here:
+- [progressive-controls source file](https://github.com/wmurphyrd/aframe-super-hands-component/blob/dc1a601b7fa9d606a05ec2d3500f8f141c65c20c/misc_components/progressive-controls.js "aframe-super-hands-component / progressive-controls") created by Will Murphy
 
 ### Important Notes
 
