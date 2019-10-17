@@ -2,16 +2,16 @@
 <html>
 <head>
 	<title>Dynamic-FOV-Reduction Component | A-Frame</title>
-	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-	<script src="https://rawgit.com/thedart76/aframe-dynamic-fov-reduction/master/js/aframe-dynamic-fov-reduction.min.js"></script>
+	<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+	<script src="https://rawcdn.githack.com/thedart76/aframe-dynamic-fov-reduction/bc4240eeb8feb777bf90e6364c73517703721471/js/aframe-dynamic-fov-reduction.min.js"></script>
 	<!-- REQUIRED COMPONENTS -->
-	<script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script>
-	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
-	<script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+	<script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
+    <script src="js/progressive-controls.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
 </head>
 
 <body>
-	<a-scene background="color: #FFFFFF" antialias="true">
+	<a-scene background="color: #FFFFFF" renderer="antialias: true">
 		<!-- ASSET MANAGEMENT SYSTEM -->
 		<a-assets>
 			<a-mixin id="arc" geometry="primitive: torus; arc: 180; radius: 3"
@@ -32,8 +32,10 @@
 			   because of A-Frame's order-dependent rendering.
 		******************************************************************* -->
 		<!-- CAMERA RIG | DYNAMIC-FOV-REDUCTION COMPONENT -->
-		<a-entity id="cam-rig" dynamic-fov-reduction="strength: 1">
-			<a-camera></a-camera>
+		<a-entity movement-controls="controls: gamepad" dynamic-fov-reduction>
+            <a-entity progressive-controls>
+                <a-camera id="cam"></a-camera>
+            </a-entity>
 		</a-entity>
 		
 		<!-- GROUND -->
