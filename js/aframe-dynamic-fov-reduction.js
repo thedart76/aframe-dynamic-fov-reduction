@@ -1,5 +1,6 @@
 AFRAME.registerComponent('dynamic-fov-reduction', {
-	schema: {
+    
+    schema: {
 		strength: {type: 'number', default: 1},
 		speed: {type: 'number', default: 0.2}
 	},
@@ -7,20 +8,6 @@ AFRAME.registerComponent('dynamic-fov-reduction', {
 	init: function () {
 		var el = this.el;
 		var data = this.data;
-		
-		// ATTACH THE MOVEMENT-CONTROLS COMPONENT TO THE CAMERA RIG
-		el.setAttribute('movement-controls', {speed: data.speed, controls: 'gamepad'});
-		
-		// CREATE PROGRESSIVE CONTROLS
-		var progressiveControls = document.createElement('a-entity');
-		progressiveControls.setAttribute('progressive-controls', '');
-		el.appendChild(progressiveControls);
-		
-		// CREATE CAMERA MANUALLY
-		var camera = document.createElement('a-camera');
-		camera.setAttribute('id', 'cam');
-		camera.setAttribute('wasd-controls-enabled', false);
-		progressiveControls.appendChild(camera);
 		
 		// CREATE VIGNETTE IMAGE AND SET OPACITY AND POSITION DEFAULT VALUES
 		var fovFilter = document.createElement('a-image');
@@ -39,6 +26,8 @@ AFRAME.registerComponent('dynamic-fov-reduction', {
 			fovFilter.object3D.position.z = 0;
 			console.log("ERROR: The only accepted strength property values are 1, 2, or 3");
 		}
+        
+        var camera = document.querySelector('#cam');
 		camera.appendChild(fovFilter);
 		
 		// FOV FILTER FADE IN ANIMATION WHEN MOVING AROUND
