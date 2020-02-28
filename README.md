@@ -30,15 +30,15 @@ The **dynamic-fov-reduction** component relies on the following components, so b
 
 ### Browser Installation
 
-Install and use by directly including the [browser files](https://github.com/thedart76/aframe-dynamic-fov-reduction/tree/master/js "browser files"), plus the required and suggested components:
+Install and use by directly including the [browser files](https://github.com/thedart76/aframe-dynamic-fov-reduction/tree/master/js "browser files"), plus the required component `aframe-extras`:
 
 	<head>
-		<title>Dynamic-FOV-Reduction Component</title>
-		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-		<script src="https://rawcdn.githack.com/thedart76/aframe-dynamic-fov-reduction/bc4240eeb8feb777bf90e6364c73517703721471/js/aframe-dynamic-fov-reduction.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js">
-        </script>
-	</head>
+        <title>Dynamic-FOV-Reduction Component | A-Frame</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/thedart76/aframe-dynamic-fov-reduction/master/js/aframe-dynamic-fov-reduction.min.js"></script>
+        <!-- REQUIRED COMPONENT -->
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    </head>
 
 ### Instructions
 
