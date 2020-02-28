@@ -2,7 +2,7 @@
 
 Dynamic FOV Reduction Component For A-Frame
 
-![](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/aframe-dynamic-fov-reductionv-104.gif)
+![](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/aframe-dynamic-fov-reduction-v104.gif)
 
 ## Properties
 
