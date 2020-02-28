@@ -70,10 +70,10 @@ For the **dynamic-fov-reduction** component to work correctly, you should:
 
 ------------
 
-👀 [**VIEW THE DEMO SOURCE CODE**](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/index.html "**VIEW THE DEMO SOURCE CODE**")
+👀 [**VIEW THE DEMO'S SOURCE CODE**](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/index.html "**VIEW THE DEMO'S SOURCE CODE**")
 
 
-👀 [**VIEW THE COMPONENT SOURCE CODE**](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/js/aframe-dynamic-fov-reduction.js "**VIEW THE COMPONENT SOURCE CODE**")
+👀 [**VIEW THE COMPONENT'S SOURCE CODE**](https://github.com/thedart76/aframe-dynamic-fov-reduction/blob/master/js/aframe-dynamic-fov-reduction.js "**VIEW THE COMPONENT'S SOURCE CODE**")
 
 ------------
 
