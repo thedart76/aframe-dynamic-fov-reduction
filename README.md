@@ -65,7 +65,7 @@ For the **dynamic-fov-reduction** component to work correctly, you should:
 ⚠️ Because of the order-dependent rendering in A-Frame, make sure to place the lines of code for the camera rig and its child entities at the bottom of the HTML mark-up.
 
 ⚠️ The raycaster component uses selective intersections (objects: .clickable) for two reasons:
-1) The vignette image will not be intersecteda
+1) The vignette image will not be intersected
 2) It is best practice to do so in any of your projects
 
 ------------
